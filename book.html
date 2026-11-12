@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule Your Service | Allan Johnson</title>
+    <link rel="stylesheet" href="book.css" />
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="navbar">
+        <a class="brand" href="index.html#top" aria-label="Allan Johnson home">
+          <span class="brand-name">ALLAN JOHNSON</span>
+          <span class="brand-tagline">Personal Life Coach</span>
+        </a>
+        <input class="menu-checkbox" type="checkbox" id="menu-checkbox" />
+
+        <label
+          class="menu-toggle"
+          for="menu-checkbox"
+          aria-label="Open or close navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <a href="index.html#about">About</a>
+          <a href="services.html">Services</a>
+          <a href="index.html#plans">Plans</a>
+          <a href="index.html#blog">Blog</a>
+          <a href="index.html#guides">Guides</a>
+          <a href="#contact">Contact</a>
+          <a href="index.html#members">Members</a>
+        </nav>
+
+        <a class="login" href="index.html#login">
+          <svg class="login-icon" viewBox="0 0 50 50" aria-hidden="true">
+            <g>
+              <path
+                d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"
+              ></path>
+            </g>
+          </svg>
+          <span>Log In</span>
+        </a>
+      </div>
+    </header>
+    <main class="booking-page">
+      <a class="booking-back" href="services.html">Back</a>
+      <h1>SCHEDULE YOUR<br />SERVICE</h1>
+      <p class="booking-intro">
+        Check out our availability and book the date and time that works for you
+      </p>
+      <div class="booking-section-heading">
+        <h2>Select a Date and Time</h2>
+        <span class="timezone">Time zone: Pacific Standard Time (PST)</span>
+      </div>
+      
+      <div class="schedule-grid">
+        <section class="calendar" aria-label="Choose a date in November 2026">
+          <h3 class="month-heading">November 2026</h3>
+          <div class="calendar-grid">
+            <span class="weekday">Sun</span>
+            <span class="weekday">Mon</span>
+            <span class="weekday">Tue</span>
+            <span class="weekday">Wed</span>
+            <span class="weekday">Thu</span>
+            <span class="weekday">Fri</span>
+            <span class="weekday">Sat</span>
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-1"
+                value="2026-11-01"
+              /><label for="day-1" aria-label="November 1, 2026">1</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-2"
+                value="2026-11-02"
+              /><label for="day-2" aria-label="November 2, 2026">2</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-3"
+                value="2026-11-03"
+              /><label for="day-3" aria-label="November 3, 2026">3</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-4"
+                value="2026-11-04"
+              /><label for="day-4" aria-label="November 4, 2026">4</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-5"
+                value="2026-11-05"
+              /><label for="day-5" aria-label="November 5, 2026">5</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-6"
+                value="2026-11-06"
+              /><label for="day-6" aria-label="November 6, 2026">6</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-7"
+                value="2026-11-07"
+              /><label for="day-7" aria-label="November 7, 2026">7</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-8"
+                value="2026-11-08"
+              /><label for="day-8" aria-label="November 8, 2026">8</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-9"
+                value="2026-11-09"
+              /><label for="day-9" aria-label="November 9, 2026">9</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-10"
+                value="2026-11-10"
+                checked
+              /><label for="day-10" aria-label="November 10, 2026">10</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-11"
+                value="2026-11-11"
+              /><label for="day-11" aria-label="November 11, 2026">11</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-12"
+                value="2026-11-12"
+              /><label for="day-12" aria-label="November 12, 2026">12</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-13"
+                value="2026-11-13"
+              /><label for="day-13" aria-label="November 13, 2026">13</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-14"
+                value="2026-11-14"
+              /><label for="day-14" aria-label="November 14, 2026">14</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-15"
+                value="2026-11-15"
+              /><label for="day-15" aria-label="November 15, 2026">15</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-16"
+                value="2026-11-16"
+              /><label for="day-16" aria-label="November 16, 2026">16</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-17"
+                value="2026-11-17"
+              /><label for="day-17" aria-label="November 17, 2026">17</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-18"
+                value="2026-11-18"
+              /><label for="day-18" aria-label="November 18, 2026">18</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-19"
+                value="2026-11-19"
+              /><label for="day-19" aria-label="November 19, 2026">19</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-20"
+                value="2026-11-20"
+              /><label for="day-20" aria-label="November 20, 2026">20</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-21"
+                value="2026-11-21"
+              /><label for="day-21" aria-label="November 21, 2026">21</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-22"
+                value="2026-11-22"
+              /><label for="day-22" aria-label="November 22, 2026">22</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-23"
+                value="2026-11-23"
+              /><label for="day-23" aria-label="November 23, 2026">23</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-24"
+                value="2026-11-24"
+              /><label for="day-24" aria-label="November 24, 2026">24</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-25"
+                value="2026-11-25"
+              /><label for="day-25" aria-label="November 25, 2026">25</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-26"
+                value="2026-11-26"
+              /><label for="day-26" aria-label="November 26, 2026">26</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-27"
+                value="2026-11-27"
+              /><label for="day-27" aria-label="November 27, 2026">27</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-28"
+                value="2026-11-28"
+              /><label for="day-28" aria-label="November 28, 2026">28</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-29"
+                value="2026-11-29"
+              /><label for="day-29" aria-label="November 29, 2026">29</label></span
+            >
+            <span class="day"
+              ><input
+                class="choice-input"
+                type="radio"
+                name="date"
+                id="day-30"
+                value="2026-11-30"
+              /><label for="day-30" aria-label="November 30, 2026">30</label></span
+            >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </div>
+        </section>
+        <section class="availability" aria-label="Choose a time">
+          <h3>
+            Availability for <span class="selected-date">Tuesday, November 10</span>
+          </h3>
+          <div class="time-grid">
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-0"
+                value="10:00 am"
+                checked
+              /><label for="time-0">10:00 am</label>
+            </div>
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-1"
+                value="10:30 am"
+              /><label for="time-1">10:30 am</label>
+            </div>
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-2"
+                value="11:00 am"
+              /><label for="time-2">11:00 am</label>
+            </div>
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-3"
+                value="11:30 am"
+              /><label for="time-3">11:30 am</label>
+            </div>
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-4"
+                value="12:00 pm"
+              /><label for="time-4">12:00 pm</label>
+            </div>
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-5"
+                value="12:30 pm"
+              /><label for="time-5">12:30 pm</label>
+            </div>
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-6"
+                value="1:00 pm"
+              /><label for="time-6">1:00 pm</label>
+            </div>
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-7"
+                value="1:30 pm"
+              /><label for="time-7">1:30 pm</label>
+            </div>
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-8"
+                value="2:00 pm"
+              /><label for="time-8">2:00 pm</label>
+            </div>
+            <div class="time-choice">
+              <input
+                class="choice-input"
+                type="radio"
+                name="time"
+                id="time-9"
+                value="2:30 pm"
+              /><label for="time-9">2:30 pm</label>
+            </div>
+          </div>
+          <details class="all-sessions">
+            <summary>Show all sessions</summary>
+            <div class="time-grid">
+              <div class="time-choice">
+                <input
+                  class="choice-input"
+                  type="radio"
+                  name="time"
+                  id="extra-0"
+                  value="3:00 pm"
+                /><label for="extra-0">3:00 pm</label>
+              </div>
+              <div class="time-choice">
+                <input
+                  class="choice-input"
+                  type="radio"
+                  name="time"
+                  id="extra-1"
+                  value="3:30 pm"
+                /><label for="extra-1">3:30 pm</label>
+              </div>
+              <div class="time-choice">
+                <input
+                  class="choice-input"
+                  type="radio"
+                  name="time"
+                  id="extra-2"
+                  value="4:00 pm"
+                /><label for="extra-2">4:00 pm</label>
+              </div>
+              <div class="time-choice">
+                <input
+                  class="choice-input"
+                  type="radio"
+                  name="time"
+                  id="extra-3"
+                  value="4:30 pm"
+                /><label for="extra-3">4:30 pm</label>
+              </div>
+              <div class="time-choice">
+                <input
+                  class="choice-input"
+                  type="radio"
+                  name="time"
+                  id="extra-4"
+                  value="5:00 pm"
+                /><label for="extra-4">5:00 pm</label>
+              </div>
+             </div>
+          </details>
+        </section>
+      </div>
+      <section class="booking-service">
+        <h2>Service Details</h2>
+        <p class="service-name">Online Coaching</p>
+        <details class="service-more">
+          <summary>More details</summary>
+          <p>
+            Online Coaching<br />
+            $70<br />
+            November 13, 2026 at 10:00 am<br />
+            Online<br />
+            Staff Member #1<br />
+            1 hr
+          </p>
+        </details>
+      </section>
+      <a class="booking-next" href="booking-form.html">Next</a>
+    </main>
+    <div class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>CONTACT</h2>
+          <p>500 Terry Francine Street,<br />San Francisco, CA 94158</p>
+          <p>Tel: 123-456-7890<br />Fax: 123-456-7890</p>
+          <p><a href="mailto:info@mysite.com">info@mysite.com</a></p>
+
+          <div class="contact-socials" aria-label="Social media">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+              <img
+                sizes="25px"
+                srcset="
+                  https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png 1x,
+                  https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png 2x
+                "
+                id="img_0_comp-irx48avy"
+                src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                alt="Facebook"
+                style="object-fit: cover"
+                class="ZK9snE sFiSiq"
+                width="25"
+                height="25"
+              />
+            </a>
+            <a href="https://twitter.com/" aria-label="Twitter">
+              <img
+                sizes="25px"
+                srcset="
+                  https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c7d035ba85f6486680c2facedecdcf4d.png 1x,
+                  https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c7d035ba85f6486680c2facedecdcf4d.png 2x
+                "
+                id="img_1_comp-irx48avy"
+                src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c7d035ba85f6486680c2facedecdcf4d.png"
+                alt="Twitter"
+                style="object-fit: cover"
+                class="ZK9snE sFiSiq"
+                width="25"
+                height="25"
+              />
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <img
+                sizes="25px"
+                srcset="
+                  https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01c3aff52f2a4dffa526d7a9843d46ea.png 1x,
+                  https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01c3aff52f2a4dffa526d7a9843d46ea.png 2x
+                "
+                id="img_2_comp-irx48avy"
+                src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                alt="Instagram"
+                style="object-fit: cover"
+                class="ZK9snE sFiSiq"
+                width="25"
+                height="25"
+              />
+            </a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+              <img
+                sizes="25px"
+                srcset="
+                  https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/78aa2057f0cb42fbbaffcbc36280a64a.png 1x,
+                  https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/78aa2057f0cb42fbbaffcbc36280a64a.png 2x
+                "
+                id="img_3_comp-irx48avy"
+                src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/78aa2057f0cb42fbbaffcbc36280a64a.png"
+                alt="YouTube"
+                style="object-fit: cover"
+                class="ZK9snE sFiSiq"
+                width="25"
+                height="25"
+              />
+            </a>
+          </div>
+
+          <p class="contact-copyright">
+            © 2035 by Personal Life Coach.<br />Powered and secured by
+            <a href="https://www.wix.com/">Wix</a>
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="contact-name-row">
+            <div class="contact-field">
+              <label for="first-name">First Name *</label>
+
+              <input
+                id="first-name"
+                name="firstName"
+                autocomplete="given-name"
+                aria-describedby="first-name-error"
+                required
+              />
+              <span class="contact-error" id="first-name-error"
+                ><span aria-hidden="true">ⓘ</span> Enter a first name</span
+              >
+            </div>
+            <div class="contact-field">
+              <label for="last-name">Last Name *</label>
+
+              <input
+                id="last-name"
+                name="lastName"
+                autocomplete="family-name"
+                aria-describedby="last-name-error"
+                required
+              />
+              <span class="contact-error" id="last-name-error"
+                ><span aria-hidden="true">ⓘ</span> Enter a last name</span
+              >
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="contact-email">Email *</label>
+
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              aria-describedby="email-error"
+              required
+            />
+            <span class="contact-error" id="email-error"
+              ><span aria-hidden="true">ⓘ</span> Enter a valid email address</span
+            >
+          </div>
+          <div class="contact-field">
+            <label for="contact-subject">Subject</label>
+            <input id="contact-subject" name="subject" />
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" disabled>Submit</button>
+          <p id="contact-status" role="status">Message sending is not set up yet.</p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -744,6 +744,7 @@ a:focus-visible {
 
 .contact-name-row {
   display: flex;
+  flex-direction: column;
   gap: 12px;
 }
 
@@ -814,6 +815,7 @@ a:focus-visible {
   font: inherit;
   font-size: 15px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .contact-form button:hover {
@@ -904,8 +906,15 @@ html {
 .catalog-filters {
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;        
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 60px;
+  border-bottom: 1px solid rgb(0 0 0 / 20%);
 }
+
 .catalog-filters label {
   cursor: pointer;
   border-bottom: 2px solid transparent;
@@ -939,11 +948,10 @@ html {
 }
 .catalog-card .service-button {
   display: inline-block;
+
 }
-.catalog-card .service-button:hover {
-  background: white;
-  color: black;
-}
+
+
 #personal-growth:checked ~ .catalog-grid .career,
 #career-ambitions:checked ~ .catalog-grid .growth {
   display: none;
@@ -996,16 +1004,21 @@ a.more-services {
   background: #000;
 }
 .catalog-filters {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   width: fit-content;
   max-width: 100%;
   margin: 0 auto 60px;
-  gap: 0;
   border-bottom: 1px solid rgb(0 0 0 / 20%);
 }
 .catalog-filters label {
+  cursor: pointer;
+  border-bottom: none !important; 
   padding: 12px 28px;
   text-align: center;
   font-size: 16px;
+  transition: color 0.35s ease;
 }
 .catalog-grid {
   max-width: 916px;
@@ -1065,4 +1078,50 @@ a.more-services {
   .catalog-grid {
     max-width: 360px;
   }
+}
+
+@media (max-width: 768px) {
+  .contact-name-row {
+    flex-direction: column;
+  }
+}
+
+.catalog-card .service-button:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: underline; 
+}
+@media (max-width: 480px) {
+  .catalog-filters {
+    flex-wrap: wrap; 
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+.catalog-filters {
+  position: relative;
+}
+
+.catalog-filters::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: calc(100% / 3);
+  height: 2px;
+  background-color: #317f81;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#all-services:checked ~ .catalog-filters::after {
+  transform: translateX(0%);
+}
+
+#personal-growth:checked ~ .catalog-filters::after {
+  transform: translateX(100%);
+}
+
+#career-ambitions:checked ~ .catalog-filters::after {
+  transform: translateX(200%);
 }

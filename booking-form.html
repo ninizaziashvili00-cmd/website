@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Form | Allan Johnson</title>
+    <link rel="stylesheet" href="booking-form.css" />
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="navbar">
+        <a class="brand" href="index.html#top" aria-label="Allan Johnson home">
+          <span class="brand-name">ALLAN JOHNSON</span>
+          <span class="brand-tagline">Personal Life Coach</span>
+        </a>
+        <input class="menu-checkbox" type="checkbox" id="menu-checkbox" />
+
+        <label
+          class="menu-toggle"
+          for="menu-checkbox"
+          aria-label="Open or close navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="navigation" aria-label="Main navigation">
+          <a href="index.html#about">About</a>
+          <a href="services.html">Services</a>
+          <a href="index.html#plans">Plans</a>
+          <a href="index.html#blog">Blog</a>
+          <a href="index.html#guides">Guides</a>
+          <a href="#contact">Contact</a>
+          <a href="index.html#members">Members</a>
+        </nav>
+
+        <a class="login" href="index.html#login">
+          <svg class="login-icon" viewBox="0 0 50 50" aria-hidden="true">
+            <g>
+              <path
+                d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"
+              ></path>
+            </g>
+          </svg>
+          <span>Log In</span>
+        </a>
+      </div>
+    </header>
+    <main class="booking-form-page">
+      <a class="back-link" href="book.html">Back</a>
+      <h1>BOOKING FORM</h1>
+
+      <form
+        class="booking-columns"
+        action="booking-form.html#booking-status"
+        method="get"
+      >
+        <section class="client-details" aria-labelledby="client-heading">
+          <p class="login-banner">
+            Have an account? <a href="index.html#login">Log in</a>
+          </p>
+          <h2 id="client-heading">Client Details</h2>
+          <div class="name-email-row">
+            <div class="field">
+              <label for="client-name">Name *</label>
+              <input id="client-name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="client-email">Email *</label>
+              <input id="client-email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+         <div class="field">
+  <label for="client-phone">Phone Number</label>
+  <div class="phone-input">
+    <input type="radio" name="country-code" id="code-us" class="code-radio" value="+1" checked />
+    <input type="radio" name="country-code" id="code-ge" class="code-radio" value="+995" />
+    <input type="radio" name="country-code" id="code-gb" class="code-radio" value="+44" />
+    <input type="radio" name="country-code" id="code-ae" class="code-radio" value="+971" />
+    <input type="radio" name="country-code" id="code-uy" class="code-radio" value="+598" />
+    <input type="radio" name="country-code" id="code-de" class="code-radio" value="+49" />
+    <input type="radio" name="country-code" id="code-fr" class="code-radio" value="+33" />
+    <input type="radio" name="country-code" id="code-it" class="code-radio" value="+39" />
+    <input type="radio" name="country-code" id="code-es" class="code-radio" value="+34" />
+    <input type="radio" name="country-code" id="code-tr" class="code-radio" value="+90" />
+    <input type="radio" name="country-code" id="code-ua" class="code-radio" value="+380" />
+
+    <details class="country-dropdown">
+      <summary class="selected-country" aria-label="Select country code">
+        <span class="selected-item item-us">
+          <img src="https://flagcdn.com/us.svg" alt="US" class="flag-svg" />
+        </span>
+        <span class="selected-item item-ge">
+          <img src="https://flagcdn.com/ge.svg" alt="GE" class="flag-svg" />
+        </span>
+        <span class="selected-item item-gb">
+          <img src="https://flagcdn.com/gb.svg" alt="GB" class="flag-svg" />
+        </span>
+        <span class="selected-item item-ae">
+          <img src="https://flagcdn.com/ae.svg" alt="AE" class="flag-svg" />
+        </span>
+        <span class="selected-item item-uy">
+          <img src="https://flagcdn.com/uy.svg" alt="UY" class="flag-svg" />
+        </span>
+        <span class="selected-item item-de">
+          <img src="https://flagcdn.com/de.svg" alt="DE" class="flag-svg" />
+        </span>
+        <span class="selected-item item-fr">
+          <img src="https://flagcdn.com/fr.svg" alt="FR" class="flag-svg" />
+        </span>
+        <span class="selected-item item-it">
+          <img src="https://flagcdn.com/it.svg" alt="IT" class="flag-svg" />
+        </span>
+        <span class="selected-item item-es">
+          <img src="https://flagcdn.com/es.svg" alt="ES" class="flag-svg" />
+        </span>
+        <span class="selected-item item-tr">
+          <img src="https://flagcdn.com/tr.svg" alt="TR" class="flag-svg" />
+        </span>
+        <span class="selected-item item-ua">
+          <img src="https://flagcdn.com/ua.svg" alt="UA" class="flag-svg" />
+        </span>
+
+        <svg class="dropdown-arrow" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+          <path d="M1 1.5L6 6.5L11 1.5" stroke="#000" stroke-width="1.2" />
+        </svg>
+      </summary>
+
+      <div class="country-list">
+        <div class="country-search-wrapper">
+          <div class="country-search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="20" y1="20" x2="16.35" y2="16.35"></line>
+            </svg>
+            <input type="text" placeholder="Search" aria-label="Search country" />
+          </div>
+        </div>
+
+        <div class="country-options-scroll">
+          <label for="code-ae" class="country-option opt-ae">
+            <img src="https://flagcdn.com/ae.svg" alt="" class="flag-svg" />
+            <span>United Arab Emirates +971</span>
+          </label>
+          <label for="code-gb" class="country-option opt-gb">
+            <img src="https://flagcdn.com/gb.svg" alt="" class="flag-svg" />
+            <span>United Kingdom +44</span>
+          </label>
+          <label for="code-us" class="country-option opt-us">
+            <img src="https://flagcdn.com/us.svg" alt="" class="flag-svg" />
+            <span>United States +1</span>
+          </label>
+          <label for="code-uy" class="country-option opt-uy">
+            <img src="https://flagcdn.com/uy.svg" alt="" class="flag-svg" />
+            <span>Uruguay +598</span>
+          </label>
+          <label for="code-ge" class="country-option opt-ge">
+            <img src="https://flagcdn.com/ge.svg" alt="" class="flag-svg" />
+            <span>Georgia +995</span>
+          </label>
+          <label for="code-de" class="country-option opt-de">
+            <img src="https://flagcdn.com/de.svg" alt="" class="flag-svg" />
+            <span>Germany +49</span>
+          </label>
+          <label for="code-fr" class="country-option opt-fr">
+            <img src="https://flagcdn.com/fr.svg" alt="" class="flag-svg" />
+            <span>France +33</span>
+          </label>
+          <label for="code-it" class="country-option opt-it">
+            <img src="https://flagcdn.com/it.svg" alt="" class="flag-svg" />
+            <span>Italy +39</span>
+          </label>
+          <label for="code-es" class="country-option opt-es">
+            <img src="https://flagcdn.com/es.svg" alt="" class="flag-svg" />
+            <span>Spain +34</span>
+          </label>
+          <label for="code-tr" class="country-option opt-tr">
+            <img src="https://flagcdn.com/tr.svg" alt="" class="flag-svg" />
+            <span>Turkey +90</span>
+          </label>
+          <label for="code-ua" class="country-option opt-ua">
+            <img src="https://flagcdn.com/ua.svg" alt="" class="flag-svg" />
+            <span>Ukraine +380</span>
+          </label>
+        </div>
+      </div>
+    </details>
+
+    <input id="client-phone" type="tel" autocomplete="tel-national" />
+  </div>
+</div>
+          <div class="field">
+            <label for="client-message">Add Your Message</label>
+            <textarea id="client-message"></textarea>
+          </div>
+        </section>
+        <section class="booking-details" aria-labelledby="booking-heading">
+  <h2 id="booking-heading">Booking Details</h2>
+  <p class="booking-summary">
+    Online Coaching<br />November 12, 2026 at 10:00 am
+  </p>
+  <details class="more-details" open>
+    <summary>
+      <span class="label-more">More details</span>
+      <span class="label-less">Less details</span>
+      <span class="chevron" aria-hidden="true"></span>
+    </summary>
+    <p>Online<br />Staff Member #1<br />1 hr</p>
+  </details>
+
+  <div class="payment-details">
+    <h3>Payment Details</h3>
+    <div class="payment-total">
+      <span>Total</span>
+      <span>$70</span>
+    </div>
+  </div>
+
+  <button class="book-submit" type="submit">Book Now</button>
+  <p class="booking-status" id="booking-status" role="status">
+    This is a preview. Your details have not been sent and no appointment has been
+    booked. <a href="index.html#contact">Contact Allan Johnson</a> for booking
+    enquiries.
+  </p>
+</section>
+      </form>
+    </main>
+    <div class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>CONTACT</h2>
+          <p>500 Terry Francine Street,<br />San Francisco, CA 94158</p>
+          <p>Tel: 123-456-7890<br />Fax: 123-456-7890</p>
+          <p><a href="mailto:info@mysite.com">info@mysite.com</a></p>
+
+          <div class="contact-socials" aria-label="Social media">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+              <img
+                sizes="25px"
+                srcset="
+                  https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png 1x,
+                  https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png 2x
+                "
+                id="img_0_comp-irx48avy"
+                src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                alt="Facebook"
+                style="object-fit: cover"
+                class="ZK9snE sFiSiq"
+                width="25"
+                height="25"
+              />
+            </a>
+            <a href="https://twitter.com/" aria-label="Twitter">
+              <img
+                sizes="25px"
+                srcset="
+                  https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c7d035ba85f6486680c2facedecdcf4d.png 1x,
+                  https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c7d035ba85f6486680c2facedecdcf4d.png 2x
+                "
+                id="img_1_comp-irx48avy"
+                src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c7d035ba85f6486680c2facedecdcf4d.png"
+                alt="Twitter"
+                style="object-fit: cover"
+                class="ZK9snE sFiSiq"
+                width="25"
+                height="25"
+              />
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <img
+                sizes="25px"
+                srcset="
+                  https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01c3aff52f2a4dffa526d7a9843d46ea.png 1x,
+                  https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01c3aff52f2a4dffa526d7a9843d46ea.png 2x
+                "
+                id="img_2_comp-irx48avy"
+                src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                alt="Instagram"
+                style="object-fit: cover"
+                class="ZK9snE sFiSiq"
+                width="25"
+                height="25"
+              />
+            </a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+              <img
+                sizes="25px"
+                srcset="
+                  https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/78aa2057f0cb42fbbaffcbc36280a64a.png 1x,
+                  https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/78aa2057f0cb42fbbaffcbc36280a64a.png 2x
+                "
+                id="img_3_comp-irx48avy"
+                src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/78aa2057f0cb42fbbaffcbc36280a64a.png"
+                alt="YouTube"
+                style="object-fit: cover"
+                class="ZK9snE sFiSiq"
+                width="25"
+                height="25"
+              />
+            </a>
+          </div>
+
+          <p class="contact-copyright">
+            © 2035 by Personal Life Coach.<br />Powered and secured by
+            <a href="https://www.wix.com/">Wix</a>
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="contact-name-row">
+            <div class="contact-field">
+              <label for="first-name">First Name *</label>
+
+              <input
+                id="first-name"
+                name="firstName"
+                autocomplete="given-name"
+                aria-describedby="first-name-error"
+                required
+              />
+              <span class="contact-error" id="first-name-error"
+                ><span aria-hidden="true">ⓘ</span> Enter a first name</span
+              >
+            </div>
+            <div class="contact-field">
+              <label for="last-name">Last Name *</label>
+
+              <input
+                id="last-name"
+                name="lastName"
+                autocomplete="family-name"
+                aria-describedby="last-name-error"
+                required
+              />
+              <span class="contact-error" id="last-name-error"
+                ><span aria-hidden="true">ⓘ</span> Enter a last name</span
+              >
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="contact-email">Email *</label>
+
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              aria-describedby="email-error"
+              required
+            />
+            <span class="contact-error" id="email-error"
+              ><span aria-hidden="true">ⓘ</span> Enter a valid email address</span
+            >
+          </div>
+          <div class="contact-field">
+            <label for="contact-subject">Subject</label>
+            <input id="contact-subject" name="subject" />
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" disabled>Submit</button>
+          <p id="contact-status" role="status">Message sending is not set up yet.</p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

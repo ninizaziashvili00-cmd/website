@@ -745,6 +745,7 @@ a:focus-visible {
 .contact-name-row {
   display: flex;
   gap: 12px;
+
 }
 
 .contact-field {
@@ -888,4 +889,119 @@ a.more-services {
 .contact-form button:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .contact-name-row {
+    flex-direction: column;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+body {
+  padding-top: 93px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding-top: 130px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    padding-top: 112px;
+  }
+} 
+#about,
+#services,
+#contact {
+  scroll-margin-top: 93px;
+}
+
+@media (max-width: 1000px) {
+  #about,
+  #services,
+  #contact {
+    scroll-margin-top: 130px;
+  }
+}
+
+@media (max-width: 360px) {
+  #about,
+  #services,
+  #contact {
+    scroll-margin-top: 112px;
+  }
+} 
+@media (max-width: 480px) {
+  .contact-name-row {
+    flex-direction: column;
+  }
+}
+.contact-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+a.more-services {
+  width: fit-content;
+  text-align: center;
+}
+
+.button,
+.btn,
+.service-button,
+.contact-form button {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.button:hover,
+.btn-black:hover,
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+
+.service-button {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid #000;
+  color: #fff;
+  background: #000;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, color 0.4s ease, border 0.4s ease;
+}
+
+.service-card .service-button:hover {
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+}
+
+
+.more-services {
+  display: block;
+  width: fit-content;
+  min-width: 190px;
+  margin: 90px auto 0;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
