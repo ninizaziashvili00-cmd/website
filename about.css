@@ -285,7 +285,6 @@ a:focus-visible {
 
 }
 
-/* ---------- CONTACT ---------- */
 .contact-section {
   flex: none;
   padding: 50px 24px 40px;
@@ -498,9 +497,6 @@ html {
   }
 }
 
-/* ---------- ABOUT ME PAGE ---------- */
-
-/* big picture on top */
 .about-hero {
   height: 548px;
   background-image: url("https://static.wixstatic.com/media/ea71bb_94cf51da28624a84950b85904bccd016~mv2_d_3000_1999_s_2.jpg");
@@ -522,7 +518,6 @@ html {
   letter-spacing: -0.1em;
 }
 
-/* small line above the title */
 .about-hero h1::before {
   content: "";
   display: block;
@@ -532,7 +527,6 @@ html {
   background: #000;
 }
 
-/* white part */
 .about-content {
   position: relative;
   width: 980px;
@@ -542,7 +536,7 @@ html {
   background: #fff;
 }
 
-/* photo with white frame, it goes up on the picture */
+
 .portrait {
   position: absolute;
   top: -82px;
@@ -571,13 +565,13 @@ html {
   font: 400 15px/25.5px "Avenir Light", sans-serif;
 }
 
-/* first text is next to the photo so it is smaller */
+
 .about-content .first-text {
   max-width: 519px;
   margin-bottom: 30px;
 }
 
-/* certifications and qualifications */
+
 .lists {
   display: flex;
   margin-top: 45px;
@@ -600,7 +594,7 @@ html {
   font: 400 15px/25.5px "Avenir Light", sans-serif;
 }
 
-/* tablet */
+
 @media (max-width: 1000px) {
   .about-hero {
     height: 350px;
@@ -633,7 +627,7 @@ html {
   }
 }
 
-/* phone */
+
 @media (max-width: 600px) {
   .about-hero {
     height: 250px;
