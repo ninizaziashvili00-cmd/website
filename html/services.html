@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me | Allan Johnson</title>
-    <link rel="stylesheet" href="about.css" />
+    <title>Services | Allan Johnson</title>
+    <link rel="stylesheet" href="../css/services.css" />
   </head>
   <body id="top">
     <header class="site-header">
@@ -27,8 +27,8 @@
 
         <nav class="navigation" aria-label="Main navigation">
           <a href="index.html#about">About</a>
-          <a href="services.html">Services</a>
-          <a href="index.html#plans">Plans</a>
+          <a href="services.html" aria-current="page">Services</a>
+          <a href="plans.html">Plans</a>
           <a href="index.html#blog">Blog</a>
           <a href="index.html#guides">Guides</a>
           <a href="#contact">Contact</a>
@@ -47,69 +47,65 @@
         </a>
       </div>
     </header>
-    <main class="about-page">
-      <!-- big picture on top -->
-      <div class="about-hero">
-        <div class="about-hero-inner">
-          <h1>ABOUT<br />ME</h1>
+    <main class="services-page">
+      <h1>SERVICES</h1>
+      <div class="catalog">
+        <input
+          class="filter-radio"
+          type="radio"
+          name="category"
+          id="all-services"
+          checked
+        />
+        <input class="filter-radio" type="radio" name="category" id="personal-growth" />
+        <input class="filter-radio" type="radio" name="category" id="career-ambitions" />
+        <div class="catalog-filters" role="group" aria-label="Filter services">
+          <label for="all-services">All Services</label>
+          <label for="personal-growth">Personal Growth</label>
+          <label for="career-ambitions">Career Ambitions</label>
         </div>
-      </div>
-
-      <!-- white part with the text -->
-      <div class="about-content">
-        <div class="portrait">
-          <img
-            src="https://static.wixstatic.com/media/ea71bb_1bcbdb54bfd8477a9f296b152a7a340f~mv2_d_2736_2736_s_4_2.jpg"
-            alt="Allan Johnson"
-          />
-        </div>
-
-        <h2>Passionate About Inspiring Others</h2>
-
-        <p class="first-text">
-          I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-          Just click “Edit Text” or double click me to add your own content and make
-          changes to the font. I’m a great place for you to tell a story and let your
-          users know a little more about you.
-        </p>
-
-        <p>
-          This is a great space to write long text about your company and your
-          services. You can use this space to go into a little more detail about your
-          company. Talk about your team and what services you provide. Tell your
-          visitors the story of how you came up with the idea for your business and
-          what makes you different from your competitors.
-        </p>
-
-        <p>
-          At Wix we’re passionate about making templates that allow you to build
-          fabulous websites and it’s all thanks to the support and feedback from users
-          like you! Keep up to date with New Releases and what’s Coming Soon in
-          Wixellaneous in Support. Feel free to tell us what you think and give us
-          feedback in the Wix Forum. If you’d like to benefit from a professional
-          designer’s touch, head to the Wix Arena and connect with one of our Wix Pro
-          designers. Or if you need more help you can simply type your questions into
-          the Support Forum and get instant answers.
-        </p>
-
-        <div class="lists">
-          <div class="list-box">
-            <h2>Certifications</h2>
-            <ul>
-              <li>I'm a title. Click here to add your own text and edit me.</li>
-              <li>I'm a title. Click here to add your own text and edit me.</li>
-              <li>I'm a title. Click here to add your own text and edit me.</li>
-            </ul>
-          </div>
-
-          <div class="list-box">
-            <h2>Qualifications</h2>
-            <ul>
-              <li>I'm a title. Click here to add your own text and edit me.</li>
-              <li>I'm a title. Click here to add your own text and edit me.</li>
-              <li>I'm a title. Click here to add your own text and edit me.</li>
-            </ul>
-          </div>
+        <div class="catalog-grid">
+          <article class="catalog-card growth">
+            <h2>Free Consultation</h2>
+            <p>Use this area to describe one of your services.</p>
+            <p>45 min</p>
+            <a class="service-button" href="book.html">Book Now</a>
+          </article>
+          <article class="catalog-card growth">
+            <h2>Online Coaching</h2>
+            <p>Use this area to describe one of your services.</p>
+            <p>1 hr</p>
+            <p class="catalog-price">$70</p>
+            <a class="service-button" href="book.html">Book Now</a>
+          </article>
+          <article class="catalog-card growth">
+            <h2>Self-Improvement Workshop</h2>
+            <p>Use this area to describe one of your services.</p>
+            <p>1 hr</p>
+            <p class="catalog-price">$90</p>
+            <a class="service-button" href="book.html">Book Now</a>
+          </article>
+          <article class="catalog-card career">
+            <h2>Corporate Life</h2>
+            <p>Use this area to describe one of your services.</p>
+            <p>1 hr</p>
+            <p class="catalog-price">$70</p>
+            <a class="service-button" href="book.html">Book Now</a>
+          </article>
+          <article class="catalog-card career">
+            <h2>Career Coaching</h2>
+            <p>Use this area to describe one of your services.</p>
+            <p>1 hr</p>
+            <p class="catalog-price">$80</p>
+            <a class="service-button" href="book.html">Book Now</a>
+          </article>
+          <article class="catalog-card career">
+            <h2>Group Coaching</h2>
+            <p>Use this area to describe one of your services.</p>
+            <p>1 hr</p>
+            <p class="catalog-price">$90</p>
+            <a class="service-button" href="book.html">Book Now</a>
+          </article>
         </div>
       </div>
     </main>

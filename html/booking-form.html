@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services | Allan Johnson</title>
-    <link rel="stylesheet" href="services.css" />
+    <title>Booking Form | Allan Johnson</title>
+    <link rel="stylesheet" href="../css/booking-form.css" />
   </head>
   <body id="top">
     <header class="site-header">
@@ -27,8 +27,8 @@
 
         <nav class="navigation" aria-label="Main navigation">
           <a href="index.html#about">About</a>
-          <a href="services.html" aria-current="page">Services</a>
-          <a href="index.html#plans">Plans</a>
+          <a href="services.html">Services</a>
+          <a href="plans.html">Plans</a>
           <a href="index.html#blog">Blog</a>
           <a href="index.html#guides">Guides</a>
           <a href="#contact">Contact</a>
@@ -47,67 +47,184 @@
         </a>
       </div>
     </header>
-    <main class="services-page">
-      <h1>SERVICES</h1>
-      <div class="catalog">
-        <input
-          class="filter-radio"
-          type="radio"
-          name="category"
-          id="all-services"
-          checked
-        />
-        <input class="filter-radio" type="radio" name="category" id="personal-growth" />
-        <input class="filter-radio" type="radio" name="category" id="career-ambitions" />
-        <div class="catalog-filters" role="group" aria-label="Filter services">
-          <label for="all-services">All Services</label>
-          <label for="personal-growth">Personal Growth</label>
-          <label for="career-ambitions">Career Ambitions</label>
+    <main class="booking-form-page">
+      <a class="back-link" href="book.html">Back</a>
+      <h1>BOOKING FORM</h1>
+
+      <form
+        class="booking-columns"
+        action="booking-form.html#booking-status"
+        method="get"
+      >
+        <section class="client-details" aria-labelledby="client-heading">
+          <p class="login-banner">
+            Have an account? <a href="index.html#login">Log in</a>
+          </p>
+          <h2 id="client-heading">Client Details</h2>
+          <div class="name-email-row">
+            <div class="field">
+              <label for="client-name">Name *</label>
+              <input id="client-name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="client-email">Email *</label>
+              <input id="client-email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+         <div class="field">
+  <label for="client-phone">Phone Number</label>
+  <div class="phone-input">
+    <input type="radio" name="country-code" id="code-us" class="code-radio" value="+1" checked />
+    <input type="radio" name="country-code" id="code-ge" class="code-radio" value="+995" />
+    <input type="radio" name="country-code" id="code-gb" class="code-radio" value="+44" />
+    <input type="radio" name="country-code" id="code-ae" class="code-radio" value="+971" />
+    <input type="radio" name="country-code" id="code-uy" class="code-radio" value="+598" />
+    <input type="radio" name="country-code" id="code-de" class="code-radio" value="+49" />
+    <input type="radio" name="country-code" id="code-fr" class="code-radio" value="+33" />
+    <input type="radio" name="country-code" id="code-it" class="code-radio" value="+39" />
+    <input type="radio" name="country-code" id="code-es" class="code-radio" value="+34" />
+    <input type="radio" name="country-code" id="code-tr" class="code-radio" value="+90" />
+    <input type="radio" name="country-code" id="code-ua" class="code-radio" value="+380" />
+
+    <details class="country-dropdown">
+      <summary class="selected-country" aria-label="Select country code">
+        <span class="selected-item item-us">
+          <img src="https://flagcdn.com/us.svg" alt="US" class="flag-svg" />
+        </span>
+        <span class="selected-item item-ge">
+          <img src="https://flagcdn.com/ge.svg" alt="GE" class="flag-svg" />
+        </span>
+        <span class="selected-item item-gb">
+          <img src="https://flagcdn.com/gb.svg" alt="GB" class="flag-svg" />
+        </span>
+        <span class="selected-item item-ae">
+          <img src="https://flagcdn.com/ae.svg" alt="AE" class="flag-svg" />
+        </span>
+        <span class="selected-item item-uy">
+          <img src="https://flagcdn.com/uy.svg" alt="UY" class="flag-svg" />
+        </span>
+        <span class="selected-item item-de">
+          <img src="https://flagcdn.com/de.svg" alt="DE" class="flag-svg" />
+        </span>
+        <span class="selected-item item-fr">
+          <img src="https://flagcdn.com/fr.svg" alt="FR" class="flag-svg" />
+        </span>
+        <span class="selected-item item-it">
+          <img src="https://flagcdn.com/it.svg" alt="IT" class="flag-svg" />
+        </span>
+        <span class="selected-item item-es">
+          <img src="https://flagcdn.com/es.svg" alt="ES" class="flag-svg" />
+        </span>
+        <span class="selected-item item-tr">
+          <img src="https://flagcdn.com/tr.svg" alt="TR" class="flag-svg" />
+        </span>
+        <span class="selected-item item-ua">
+          <img src="https://flagcdn.com/ua.svg" alt="UA" class="flag-svg" />
+        </span>
+
+        <svg class="dropdown-arrow" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+          <path d="M1 1.5L6 6.5L11 1.5" stroke="#000" stroke-width="1.2" />
+        </svg>
+      </summary>
+
+      <div class="country-list">
+        <div class="country-search-wrapper">
+          <div class="country-search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="20" y1="20" x2="16.35" y2="16.35"></line>
+            </svg>
+            <input type="text" placeholder="Search" aria-label="Search country" />
+          </div>
         </div>
-        <div class="catalog-grid">
-          <article class="catalog-card growth">
-            <h2>Free Consultation</h2>
-            <p>Use this area to describe one of your services.</p>
-            <p>45 min</p>
-            <a class="service-button" href="book.html">Book Now</a>
-          </article>
-          <article class="catalog-card growth">
-            <h2>Online Coaching</h2>
-            <p>Use this area to describe one of your services.</p>
-            <p>1 hr</p>
-            <p class="catalog-price">$70</p>
-            <a class="service-button" href="book.html">Book Now</a>
-          </article>
-          <article class="catalog-card growth">
-            <h2>Self-Improvement Workshop</h2>
-            <p>Use this area to describe one of your services.</p>
-            <p>1 hr</p>
-            <p class="catalog-price">$90</p>
-            <a class="service-button" href="book.html">Book Now</a>
-          </article>
-          <article class="catalog-card career">
-            <h2>Corporate Life</h2>
-            <p>Use this area to describe one of your services.</p>
-            <p>1 hr</p>
-            <p class="catalog-price">$70</p>
-            <a class="service-button" href="book.html">Book Now</a>
-          </article>
-          <article class="catalog-card career">
-            <h2>Career Coaching</h2>
-            <p>Use this area to describe one of your services.</p>
-            <p>1 hr</p>
-            <p class="catalog-price">$80</p>
-            <a class="service-button" href="book.html">Book Now</a>
-          </article>
-          <article class="catalog-card career">
-            <h2>Group Coaching</h2>
-            <p>Use this area to describe one of your services.</p>
-            <p>1 hr</p>
-            <p class="catalog-price">$90</p>
-            <a class="service-button" href="book.html">Book Now</a>
-          </article>
+
+        <div class="country-options-scroll">
+          <label for="code-ae" class="country-option opt-ae">
+            <img src="https://flagcdn.com/ae.svg" alt="" class="flag-svg" />
+            <span>United Arab Emirates +971</span>
+          </label>
+          <label for="code-gb" class="country-option opt-gb">
+            <img src="https://flagcdn.com/gb.svg" alt="" class="flag-svg" />
+            <span>United Kingdom +44</span>
+          </label>
+          <label for="code-us" class="country-option opt-us">
+            <img src="https://flagcdn.com/us.svg" alt="" class="flag-svg" />
+            <span>United States +1</span>
+          </label>
+          <label for="code-uy" class="country-option opt-uy">
+            <img src="https://flagcdn.com/uy.svg" alt="" class="flag-svg" />
+            <span>Uruguay +598</span>
+          </label>
+          <label for="code-ge" class="country-option opt-ge">
+            <img src="https://flagcdn.com/ge.svg" alt="" class="flag-svg" />
+            <span>Georgia +995</span>
+          </label>
+          <label for="code-de" class="country-option opt-de">
+            <img src="https://flagcdn.com/de.svg" alt="" class="flag-svg" />
+            <span>Germany +49</span>
+          </label>
+          <label for="code-fr" class="country-option opt-fr">
+            <img src="https://flagcdn.com/fr.svg" alt="" class="flag-svg" />
+            <span>France +33</span>
+          </label>
+          <label for="code-it" class="country-option opt-it">
+            <img src="https://flagcdn.com/it.svg" alt="" class="flag-svg" />
+            <span>Italy +39</span>
+          </label>
+          <label for="code-es" class="country-option opt-es">
+            <img src="https://flagcdn.com/es.svg" alt="" class="flag-svg" />
+            <span>Spain +34</span>
+          </label>
+          <label for="code-tr" class="country-option opt-tr">
+            <img src="https://flagcdn.com/tr.svg" alt="" class="flag-svg" />
+            <span>Turkey +90</span>
+          </label>
+          <label for="code-ua" class="country-option opt-ua">
+            <img src="https://flagcdn.com/ua.svg" alt="" class="flag-svg" />
+            <span>Ukraine +380</span>
+          </label>
         </div>
       </div>
+    </details>
+
+    <input id="client-phone" type="tel" autocomplete="tel-national" />
+  </div>
+</div>
+          <div class="field">
+            <label for="client-message">Add Your Message</label>
+            <textarea id="client-message"></textarea>
+          </div>
+        </section>
+        <section class="booking-details" aria-labelledby="booking-heading">
+  <h2 id="booking-heading">Booking Details</h2>
+  <p class="booking-summary">
+    Online Coaching<br />November 12, 2026 at 10:00 am
+  </p>
+  <details class="more-details" open>
+    <summary>
+      <span class="label-more">More details</span>
+      <span class="label-less">Less details</span>
+      <span class="chevron" aria-hidden="true"></span>
+    </summary>
+    <p>Online<br />Staff Member #1<br />1 hr</p>
+  </details>
+
+  <div class="payment-details">
+    <h3>Payment Details</h3>
+    <div class="payment-total">
+      <span>Total</span>
+      <span>$70</span>
+    </div>
+  </div>
+
+  <button class="book-submit" type="su">Book Now</button>
+  <p class="booking-status" id="booking-status" role="status">
+    This is a preview. Your details have not been sent and no appointment has been
+    booked. <a href="index.html#contact">Contact Allan Johnson</a> for booking
+    enquiries.
+  </p>
+</section>
+      </form>
     </main>
     <div class="contact-section" id="contact">
       <div class="contact-container">
@@ -244,7 +361,7 @@
             <label for="contact-message">Message</label>
             <textarea id="contact-message" name="message" rows="4"></textarea>
           </div>
-          <button type="submit" >Submit</button>
+          <button type="submit">Submit</button>
           <p id="contact-status" role="status">Message sending is not set up yet.</p>
         </form>
       </div>
