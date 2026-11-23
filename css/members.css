@@ -598,3 +598,77 @@ html {
 .log:hover {
   background-color: #246164;
 }
+@media (max-width: 650px) {
+  .members-page {
+    padding: 0 12px 50px;
+    background-attachment: scroll; /* Prevents background zoom/jitter on mobile */
+  }
+
+  .container {
+    width: 100%;
+    padding: 24px 20px 44px;
+  }
+
+  .top-bar {
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 50px;
+  }
+
+  .controls-right {
+    display: contents; /* Allows icons and search bar to wrap independently */
+  }
+
+  .icon-grid {
+    margin-left: auto;
+  }
+
+  .search {
+    order: 4;
+    flex: 1 1 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4px;
+  }
+
+  .child h1 {
+    font-size: clamp(19px, 6.2vw, 28px);
+    letter-spacing: clamp(1.5px, 0.8vw, 4.5px);
+    line-height: 1.35;
+  }
+
+  .child p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .members-page {
+    padding: 0 8px 40px;
+  }
+
+  .container {
+    padding: 20px 14px 36px;
+  }
+
+  .top-bar {
+    margin-bottom: 36px;
+  }
+
+  .log {
+    width: 100%;
+    max-width: 190px;
+  }
+
+  .contact-section {
+    padding: 36px 14px 30px;
+  }
+
+  .contact-info h2 {
+    margin-bottom: 28px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
