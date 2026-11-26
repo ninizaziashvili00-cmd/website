@@ -931,6 +931,10 @@ body {
   #contact {
     scroll-margin-top: 130px;
   }
+  .img-div h1 {
+    margin-bottom: 20px;
+    font-size: clamp(36px, 12vw, 64px); /* Adjusted scaling */
+  }
 }
 
 @media (max-width: 360px) {
@@ -1003,4 +1007,9 @@ html {
   html {
     scroll-behavior: auto;
   }
+  @media (max-width: 520px) {
+  .img-div h1 {
+    font-size: 38px;
+  }
+}
 }

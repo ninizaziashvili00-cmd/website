@@ -583,6 +583,7 @@ html {
 }
 
 .buy-btn {
+  display: block;
   width: 100%;
   height: 54px;
   border: 2px solid #000;
@@ -590,6 +591,8 @@ html {
   color: #fff;
   font: 400 16px/22.4px "Avenir Light", sans-serif;
   cursor: pointer;
+  padding: 7px;
+  text-align: center;
 }
 
 .buy-btn:hover {
