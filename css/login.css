@@ -44,28 +44,7 @@ p {
   border-radius: 0;
   transition: background-color 0.2s ease;
 }
+.ok:hover {
+  background-color: #235c5f;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .ok{
-   min-width: 190px;
-    margin: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: rgb(49 127 129);
-    border: solid rgb(49 127 129);
-    cursor: pointer!important
-} */
