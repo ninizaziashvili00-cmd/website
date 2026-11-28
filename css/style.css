@@ -710,25 +710,6 @@ a:focus-visible {
   outline: none;
 }
 
-.contact-field input:user-invalid {
-  border-color: #b34825;
-}
-
-.contact-error {
-  display: none;
-  color: #b34825;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.contact-error span {
-  margin-right: 6px;
-}
-
-.contact-field input:user-invalid + .contact-error {
-  display: block;
-}
-
 .contact-form button {
   align-self: flex-end;
   width: 180px;
