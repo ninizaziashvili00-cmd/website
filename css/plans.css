@@ -142,55 +142,22 @@ a:focus-visible {
   outline: 2px solid #317f81;
   outline-offset: 3px;
 }
-
-
-.menu-checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-}
-
-.menu-toggle {
+.burger{
   display: none;
-  width: 36px;
-  height: 32px;
-  padding: 3px 1px;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 34px;
-  height: 3px;
-  background: #000;
-  transition:
-    transform 0.25s ease,
-    opacity 0.25s ease;
-}
-
-.menu-checkbox:checked + .menu-toggle span:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
-}
-
-.menu-checkbox:checked + .menu-toggle span:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-checkbox:checked + .menu-toggle span:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
-}
-
-.menu-checkbox:focus-visible + .menu-toggle {
-  outline: 2px solid #317f81;
-  outline-offset: 5px;
+  max-width: 50px;
 }
 
 @media (max-width: 1000px) {
+  .navigation,
+  .login {
+    display: none;
+  }
 
+  .burger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
   .site-header {
     position: fixed;
   }
@@ -225,38 +192,6 @@ a:focus-visible {
     font-size: clamp(11px, 3.8vw, 14px);
   }
 
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-shrink: 0;
-  }
-
-  .navigation {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 20;
-    display: none;
-    width: 100%;
-    height: auto;
-    padding: 12px 0;
-    flex-direction: column;
-    background: #fff;
-    box-shadow: 0 8px 18px rgb(0 0 0 / 12%);
-  }
-
-  .menu-checkbox:checked ~ .navigation {
-    display: flex;
-  }
-
-  .navigation a {
-    width: 100%;
-    padding: 0 30px;
-    text-align: left;
-    line-height: 42px;
-  }
-
   .login {
     display: none;
   }
@@ -269,20 +204,7 @@ a:focus-visible {
     height: 112px;
     padding: 0 16px;
   }
-
-  .menu-toggle {
-    width: 32px;
-    height: 30px;
-  }
-
-  .menu-toggle span {
-    width: 30px;
-  }
-
-  .navigation a {
-    padding: 0 20px;
-  }
-
+  
 }
 
 
