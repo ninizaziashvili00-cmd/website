@@ -938,22 +938,7 @@ body {
   color: #fff;
   border-color: #000;
 }
-.all-sessions {
-  margin-top: 10px;
-  font-size: 16px;
-  text-align: center;
-}
-.all-sessions summary {
-  cursor: pointer;
-  text-decoration: underline;
-  list-style: none;
-}
-.all-sessions summary::-webkit-details-marker {
-  display: none;
-}
-.all-sessions .time-grid {
-  margin-top: 8px;
-}
+
 .booking-service {
   margin-top: 48px;
 }
@@ -1275,13 +1260,13 @@ body {
   content: "Monday, November 30";
   font-size: 16px;
 }
-
-
-
-
-
-.all-sessions[open] summary {
-  display: none;
+.service-more {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.time-choice label:hover {
+  background-color: gray;
+  transition: background-color 0.2s ease;
 }
 .day label:hover {
   background-color: #edf1f2; 

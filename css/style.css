@@ -839,7 +839,7 @@ body {
   }
   .img-div h1 {
     margin-bottom: 20px;
-    font-size: clamp(36px, 12vw, 64px); /* Adjusted scaling */
+    font-size: clamp(36px, 12vw, 64px); 
   }
 }
 

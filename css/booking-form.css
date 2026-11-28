@@ -1053,58 +1053,6 @@ select {
   font-size: 17px;
   line-height: 1.5;
 }
- .more-details {
-  display: flex;
-  flex-direction: column-reverse;
-  border-bottom: 1px solid #000;
-  padding-bottom: 18px;
-  font-size: 16px;
-}
-
-.more-details summary {
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 8px;
-}
-
-.more-details summary::-webkit-details-marker {
-  display: none;
-}
-
-.more-details .label-less {
-  display: none;
-}
-
-.more-details[open] .label-more {
-  display: none;
-}
-
-.more-details[open] .label-less {
-  display: inline;
-}
-
-.more-details .chevron {
-  width: 9px;
-  height: 9px;
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;
-  transform: rotate(45deg);
-  margin-right: 4px;
-  transition: transform 0.2s ease;
-}
-
-.more-details[open] .chevron {
-  transform: rotate(-135deg);
-  margin-top: 5px;
-}
-
-.more-details p {
-  margin: 0 0 12px;
-  line-height: 1.6;
-}
 
 .payment-details {
   margin-top: 24px;
@@ -1253,7 +1201,6 @@ summary:focus-visible {
   }
 
   .booking-summary, 
-  .more-details, 
   .payment-total {
     font-size: 15px;
   }
